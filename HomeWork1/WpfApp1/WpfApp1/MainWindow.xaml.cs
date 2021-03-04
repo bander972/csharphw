@@ -50,7 +50,8 @@ namespace WpfApp1
 
         private void btn_9_Click(object sender, RoutedEventArgs e)
         {
-            
+            inputstr.Add('9');
+            txtbox_1.Text.Append<char>('9');
         }
     }
 }
