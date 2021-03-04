@@ -1,0 +1,7 @@
+D:\360Chrome\Chrome\WpfApp1\WpfApp1\obj\Debug\CaculatorDesign.csprojAssemblyReference.cache
+D:\360Chrome\Chrome\WpfApp1\WpfApp1\obj\Debug\MainWindow.g.cs
+D:\360Chrome\Chrome\WpfApp1\WpfApp1\obj\Debug\App.g.cs
+D:\360Chrome\Chrome\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+D:\360Chrome\Chrome\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+D:\360Chrome\Chrome\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
+D:\360Chrome\Chrome\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb

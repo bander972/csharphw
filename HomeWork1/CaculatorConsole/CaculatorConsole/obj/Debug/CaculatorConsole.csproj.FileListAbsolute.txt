@@ -1,0 +1,7 @@
+D:\360Chrome\Chrome\CaculatorConsole\CaculatorConsole\bin\Debug\CaculatorConsole.exe.config
+D:\360Chrome\Chrome\CaculatorConsole\CaculatorConsole\bin\Debug\CaculatorConsole.exe
+D:\360Chrome\Chrome\CaculatorConsole\CaculatorConsole\bin\Debug\CaculatorConsole.pdb
+D:\360Chrome\Chrome\CaculatorConsole\CaculatorConsole\obj\Debug\CaculatorConsole.csprojAssemblyReference.cache
+D:\360Chrome\Chrome\CaculatorConsole\CaculatorConsole\obj\Debug\CaculatorConsole.csproj.CoreCompileInputs.cache
+D:\360Chrome\Chrome\CaculatorConsole\CaculatorConsole\obj\Debug\CaculatorConsole.exe
+D:\360Chrome\Chrome\CaculatorConsole\CaculatorConsole\obj\Debug\CaculatorConsole.pdb
