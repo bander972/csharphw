@@ -23,7 +23,7 @@
         <Button x:Name="btn_dot" Content="." HorizontalAlignment="Left" Height="47" Margin="295,430,0,0" VerticalAlignment="Top" Width="114" Click="btn_dot_Click"/>
         <Button x:Name="btn_pi" Content="π" HorizontalAlignment="Left" Height="47" Margin="416,430,0,0" VerticalAlignment="Top" Width="114" Click="btn_pi_Click"/>
         <Button x:Name="btn_multiple" Content="*" HorizontalAlignment="Left" Height="47" Margin="576,361,0,0" VerticalAlignment="Top" Width="110" Click="btn_multiple_Click"/>
-        <Button x:Name="btn_equal" Content="=" HorizontalAlignment="Left" Height="83" Margin="564,90,0,0" VerticalAlignment="Top" Width="126" Click="btn_equals_Click"/>
+        <Button x:Name="btn_equal" Content="=" HorizontalAlignment="Left" Height="83" Margin="564,90,0,0" VerticalAlignment="Top" Width="126" Click="btn_equal_Click"/>
         <Button x:Name="btn_divide" Content="/" HorizontalAlignment="Left" Height="47" Margin="576,430,0,0" VerticalAlignment="Top" Width="110" Click="btn_divide_Click"/>
 
     </Grid>
