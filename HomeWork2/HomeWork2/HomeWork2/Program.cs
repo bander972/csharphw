@@ -10,12 +10,9 @@ namespace HomeWork2
     {
         static void Main(string[] args)
         {
-            double[] num1 = { 10, 20, 50, 14, 32, 79 };
-            ArrayMethods.GetArray(num1);
+            Emethod.PrimeEMethod();
+            Console.ReadLine();
             
-            int n=Console.Read();
-            Prime_Factor.getPrimeFactor(n);
-            Console.ReadKey();
         }
     }
 }

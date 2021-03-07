@@ -8,38 +8,24 @@ namespace HomeWork2
 {
     class Prime_Factor
     {
+
         public static void getPrimeFactor(int numInput)
         {
-            StringBuilder sb = new StringBuilder();
-
-            int i;
-
-            if (numInput == 1) { Console.WriteLine("Prime Factor=" + numInput); }
-            for (i = 2; i <= numInput; i++)
+            Console.WriteLine("整数"+numInput+"的素数因子是：");
+            for (int i = 2; i * i < numInput; i++)
             {
-                while (true)
+                while (numInput % i == 0)
                 {
-                    if (numInput % i == 0)
-                    {
-                        sb.Append(i);
-                        numInput /= i;
-                        if (numInput != 1)
-                        {
-                            sb.Append("*");
-                        }
-                    }
-                    else
-                    {
-                        break;
-                    }
+                    Console.Write(i+" ");
+                    numInput /= i;
+
                 }
             }
             if (numInput != 1)
             {
-                sb.Append(numInput);
+                Console.Write(numInput);
             }
-            Console.WriteLine(sb);
-        }
     }
- }
+    }
+}
         
