@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace HomeWork2
 {
     class Emethod
-    {
+    {    //埃氏筛法实现算法
         public static void PrimeEMethod()
         {
             int[] a = new int[200];

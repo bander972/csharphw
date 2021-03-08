@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace HomeWork2
 {
     class ArrayMethods
-    {
+    {   //数组的最大值与最小值，平均值，和
         public static double[] GetArray(double[] num)
         { double sum = 0;
             for(int i = 0; i < num.Length; i++)

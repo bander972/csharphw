@@ -10,9 +10,11 @@ namespace HomeWork2
     {
         static void Main(string[] args)
         {
-            Emethod.PrimeEMethod();
+
+            int num = 16;
+            Prime_Factor.getPrimeFactor(num);
+           
             Console.ReadLine();
-            
         }
     }
 }
