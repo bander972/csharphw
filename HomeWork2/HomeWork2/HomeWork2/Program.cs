@@ -11,7 +11,7 @@ namespace HomeWork2
         static void Main(string[] args)
         {
 
-            int num = 16;
+            int num = 19;
             Prime_Factor.getPrimeFactor(num);
            
             Console.ReadLine();

@@ -1,0 +1,7 @@
+D:\360Chrome\Chrome\csharphw\HomeWork3\HomeWork3\HomeWork3\bin\Debug\HomeWork3.exe.config
+D:\360Chrome\Chrome\csharphw\HomeWork3\HomeWork3\HomeWork3\bin\Debug\HomeWork3.exe
+D:\360Chrome\Chrome\csharphw\HomeWork3\HomeWork3\HomeWork3\bin\Debug\HomeWork3.pdb
+D:\360Chrome\Chrome\csharphw\HomeWork3\HomeWork3\HomeWork3\obj\Debug\HomeWork3.csprojAssemblyReference.cache
+D:\360Chrome\Chrome\csharphw\HomeWork3\HomeWork3\HomeWork3\obj\Debug\HomeWork3.csproj.CoreCompileInputs.cache
+D:\360Chrome\Chrome\csharphw\HomeWork3\HomeWork3\HomeWork3\obj\Debug\HomeWork3.exe
+D:\360Chrome\Chrome\csharphw\HomeWork3\HomeWork3\HomeWork3\obj\Debug\HomeWork3.pdb
