@@ -20,7 +20,7 @@ namespace HomeWork3
         }
         public bool isLegal()
         {
-            if (A <= 0 || B <= 0 || C <= 0 || A + B <= C || B + C <= A || A + C <= B) return false;
+            if (A <= 0  &&B <= 0 && C <= 0 && A + B <= C && B + C <= A && A + C <= B) return false;
             return true;
         }
         public double getArea()

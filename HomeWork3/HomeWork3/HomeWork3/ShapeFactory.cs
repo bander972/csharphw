@@ -24,7 +24,8 @@ namespace HomeWork3
                     return new Square();
                 default:
                     Console.WriteLine("Can't creat a new Shape,please retry");
-                    return null;
+                    throw new ArithmeticException("Shape Error");
+                    break;
             }
         }
     }

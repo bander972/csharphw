@@ -17,11 +17,7 @@ namespace HomeWork3
         }
         public bool isLegal()
         {
-            if (Width <= 0 || Height <= 0)
-            {
-                return false;
-            }
-            return true;
+            return Width >= 0 && Height >= 0;
         }
         public double getArea() {
             if (!isLegal()) return -1;

@@ -15,11 +15,7 @@ namespace HomeWork3
             this.Length = new Random(BitConverter.ToInt32(Guid.NewGuid().ToByteArray(), 0)).Next(10,200);
         }
         public  bool isLegal() {
-            if (Length <= 0 )
-            {
-                return false;
-            }
-            return true;
+            return Length >= 0;
         }
 
         public  double getArea()
