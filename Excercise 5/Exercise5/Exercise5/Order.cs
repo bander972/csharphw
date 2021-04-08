@@ -28,7 +28,7 @@ namespace Exercise5
         {
             if (this.Details.Contains(orderDetails))
             {
-                throw new ApplicationException($"This goods{orderDetails.Goods.GoodsName} is already exists in the list!");
+                throw new ApplicationException($"This goods {orderDetails.Goods.GoodsName} is already exists in the list!");
 
             }
             Details.Add(orderDetails);
@@ -39,7 +39,7 @@ namespace Exercise5
         }
         public override string ToString()
         {
-            String result = $"OrderIndex:{OrderIndex}, Client:({Client1})";
+            String result = $"OrderIndex:{OrderIndex}, Client:({Client.name})";
             Details.ForEach(detail => result += "\n\t" + detail);
             return result;
         }

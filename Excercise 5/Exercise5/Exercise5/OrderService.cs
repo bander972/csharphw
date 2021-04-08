@@ -73,8 +73,14 @@ namespace Exercise5
             Console.WriteLine("\nSerialized as XML:");
             Console.WriteLine(File.ReadAllText("s.xml"));
         }
-        public void Import() { 
-        
+        public void Import() {
+            XmlSerializer xsl = new XmlSerializer(typeof(List<Order>));
+            using (FileStream fs = new FileStream("s.xml", FileMode.Open))
+            {
+                List<Order>orders=(List<Order>)xsl.Deserialize(fs);
+                orders.ForEach(order => Console.WriteLine(order));
+            }
+
         }
     }
 }
