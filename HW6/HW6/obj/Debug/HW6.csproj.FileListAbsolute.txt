@@ -5,3 +5,8 @@ D:\360Chrome\Chrome\csharphw\HW6\HW6\bin\Debug\HW6.exe
 D:\360Chrome\Chrome\csharphw\HW6\HW6\bin\Debug\HW6.pdb
 D:\360Chrome\Chrome\csharphw\HW6\HW6\obj\Debug\HW6.exe
 D:\360Chrome\Chrome\csharphw\HW6\HW6\obj\Debug\HW6.pdb
+D:\360Chrome\Chrome\csharphw\HW6\HW6\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\360Chrome\Chrome\csharphw\HW6\HW6\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\360Chrome\Chrome\csharphw\HW6\HW6\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\360Chrome\Chrome\csharphw\HW6\HW6\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\360Chrome\Chrome\csharphw\HW6\HW6\obj\Debug\HW6.csproj.CopyComplete

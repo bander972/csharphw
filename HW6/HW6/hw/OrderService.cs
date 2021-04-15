@@ -10,7 +10,7 @@ namespace HW6.hw
 {
     class OrderService
     {
-        private List<Order> orders = new List<Order>();
+        public List<Order> orders = new List<Order>();
         public OrderService() { }
         public void AddOrder(Order order)
         {
@@ -20,9 +20,9 @@ namespace HW6.hw
             }
             orders.Add(order);
         }
-        public void RemoveOrder(Order order, int orderIndex)
+        public void RemoveOrder( int orderIndex)
         {
-            if (!orders.Contains(order) || orders == null)
+            if (!orders.All(o=>o.OrderIndex==orderIndex))
             {
                 throw new ApplicationException("the order you are searching for is missing");
             }
@@ -34,7 +34,7 @@ namespace HW6.hw
         }
         public void Update(Order order)
         {
-            RemoveOrder(order, order.OrderIndex);
+            RemoveOrder(order.OrderIndex);
             orders.Add(order);
         }
         public Order GetById(int orderIndex)

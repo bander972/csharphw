@@ -18,12 +18,12 @@ namespace Exercise5
             }
             orders.Add(order);
          }
-        public void RemoveOrder(Order order,int orderIndex)
+        public void RemoveOrder(int orderIndex)
         {
-            if (!orders.Contains(order) || orders == null)
-            {
-                throw new ApplicationException("the order you are searching for is missing");
-            }
+            if (!orders.All(o => o.OrderIndex == orderIndex))
+                {
+                    throw new ApplicationException("the order you are searching for is missing");
+                }
             orders.RemoveAll(o=>o.OrderIndex==orderIndex);
         }
         public List<Order> QueryAll()
@@ -32,7 +32,7 @@ namespace Exercise5
         }
         public void Update(Order order)
         {
-            RemoveOrder(order,order.OrderIndex);
+            RemoveOrder(order.OrderIndex);
             orders.Add(order);
         }
         public Order GetById(int orderIndex)

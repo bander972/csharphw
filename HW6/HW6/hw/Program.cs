@@ -13,42 +13,69 @@ namespace HW6
         {
             try
             {
-                ClientInfo client1 = new ClientInfo(1001, "xtt", "chengdu", 060425413);
-                ClientInfo client2 = new ClientInfo(1002, "zyc", "wuhan", 1000542673);
-                Order order01 = new Order(1, client1);
+                ClientInfo customer1 = new ClientInfo(1, "Customer1", "wuhan", 10081);
+                ClientInfo customer2 = new ClientInfo(2, "Customer2", "chengdu", 10086);
 
-                Goods pens = new Goods(13, "pens", 2.5);
-                Goods meat = new Goods(15, "meat", 10);
-                Goods wallet = new Goods(10, "wallet", 20);
+                Goods milk = new Goods(1, "Milk", 6.00);
+                Goods eggs = new Goods(2, "eggs", 4.99);
+                Goods apple = new Goods(3, "apple", 5.59);
 
-                order01.AddDetails(new OrderDetails(meat, 3));
-                order01.AddDetails(new OrderDetails(wallet, 1));
+                Order order1 = new Order(1, customer1);
+                order1.AddDetails(new OrderDetails(apple, 8));
+                order1.AddDetails(new OrderDetails(eggs, 10));
+                //order1.AddDetails(new OrderDetail(eggs, 8));
+                //order1.AddDetails(new OrderDetail(milk, 10));
 
-                order01.ToString();
-                Order order02 = new Order(2, client1);
-                order02.AddDetails(new OrderDetails(pens, 20));
-                order02.AddDetails(new OrderDetails(meat, 1));
-                order02.ToString();
+                Order order2 = new Order(2, customer2);
+                order2.AddDetails(new OrderDetails(eggs, 10));
+                order2.AddDetails(new OrderDetails(milk, 10));
 
-                Order order03 = new Order(3, client2);
-                order03.AddDetails(new OrderDetails(meat, 2));
-                order03.AddDetails(new OrderDetails(meat, 15));
-                order03.ToString();
+                Order order3 = new Order(3, customer2);
+                order3.AddDetails(new OrderDetails(milk, 100));
 
-                OrderService service = new OrderService();
-                service.AddOrder(order01);
-                service.AddOrder(order02);
-                service.AddOrder(order03);
+                OrderService orderService = new OrderService();
+                orderService.AddOrder(order1);
+                orderService.AddOrder(order2);
+                orderService.AddOrder(order3);
 
-                service.Export();
-                List<Order> orders = service.QueryAll();
-                orders.ForEach(order => Console.WriteLine(order));
-                orders = service.QueryByCustomerName(client1.name);
+                Console.WriteLine("\n GetById");
+                Console.WriteLine(orderService.GetById(1));
+                Console.WriteLine(orderService.GetById(5) == null);
 
+                Console.WriteLine("\nGetAllOrders");
+                List<Order> orders = orderService.QueryAll();
+                orders.ForEach(o => Console.WriteLine(o));
+
+                Console.WriteLine("\nGetOrdersByCustomerName:'Customer2'");
+                orders = orderService.QueryByCustomerName("Customer2");
+                orders.ForEach(o => Console.WriteLine(o));
+
+                Console.WriteLine("\nGetOrdersByGoodsName:'eggs'");
+                orders = orderService.QueryByGoodsName("eggs");
+                orders.ForEach(o => Console.WriteLine(o));
+
+                Console.WriteLine("\nGetOrdersTotalAmount:1000");
+                orders = orderService.QueryByTotalAmount(1000);
+                orders.ForEach(o => Console.WriteLine(o));
+
+                Console.WriteLine("\nRemove order(id=2) and qurey all");
+                orderService.RemoveOrder(2);
+                orderService.QueryAll().ForEach(
+                    o => Console.WriteLine(o));
+
+                Console.WriteLine("\n order by Amount");
+                orderService.Sort(
+                  (o1, o2) => o2.TotalPrice.CompareTo(o1.TotalPrice));
+                orderService.QueryAll().ForEach(
+                    o => Console.WriteLine(o));
+                Console.ReadLine();
             }
-            catch (Exception e) { Console.WriteLine(e.Message); }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
             Console.ReadLine();
         }
+        }
     }
- }
 

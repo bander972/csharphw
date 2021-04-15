@@ -12,18 +12,61 @@ namespace HW6.Test
     [TestClass()]
     class Test
     {
-        ClientInfo customer1 = new ClientInfo(1,"alan","wuhan",100487);
-        Goods banana = new Goods(30,"banana",5.00);
-        Goods bread = new Goods(15, "bread",6.00);
-
+        ClientInfo customer1 = new ClientInfo(1, "alan", "wuhan", 100487);
+        ClientInfo customer2 = new ClientInfo(2, "dylan", "shanghai", 105241);
+        Goods banana = new Goods(30, "banana", 5.00);
+        Goods bread = new Goods(15, "bread", 6.00);
+        Goods eggs = new Goods(20, "eggs", 10.00);
+        Goods milk = new Goods(23, "milk", 12.00);
+        OrderService service = new OrderService();
         [TestInitialize()]
         void Init()
         {
-            Order order1 = new Order(1,customer1);
+            Order order1 = new Order(1, customer1);
+            order1.AddDetails(new OrderDetails(eggs, 1));
+            order1.AddDetails(new OrderDetails(bread, 2));
             Order order2 = new Order(2, customer1);
-            OrderService
+            order2.AddDetails(new OrderDetails(banana, 4));
+            order2.AddDetails(new OrderDetails(eggs, 2));
+            Order order3 = new Order(3, customer2);
+            order3.AddDetails(new OrderDetails(banana,3));
+            order3.AddDetails(new OrderDetails(milk, 2));
+            
+            service.AddOrder(order1);
+            service.AddOrder(order2);
+            service.AddOrder(order3);
         }
-
+        [TestMethod()]
+        public void AddOrderTest()
+        {
+           
+            Order order4 = new Order(4, customer2);
+            order4.AddDetails(new OrderDetails(milk, 1));
+            order4.AddDetails(new OrderDetails(banana, 5));
+            service.AddOrder(order4);
+        }
+        [TestMethod()]
+        public void RemoveTest()
+        {
+            service.RemoveOrder(1);
+            Assert.AreEqual(3, service.orders.Count);
+        }
+        [TestMethod()]
+        public void UpdateTest()
+        {
+            Order order3 = new Order(3, customer1);
+            order3.AddDetails(new OrderDetails(milk, 4));
+            service.Update(order3);
+            Assert.AreEqual(3, service.orders.Count);
+        }
+       [TestMethod()]
+       public void QueryTest()
+        {
+            service.QueryAll();
+            service.QueryByCustomerName("alan");
+            service.QueryByGoodsName("milk");       
+        }
 
     }
 }
+
