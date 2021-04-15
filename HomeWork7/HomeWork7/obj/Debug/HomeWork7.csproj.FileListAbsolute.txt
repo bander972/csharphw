@@ -1,0 +1,10 @@
+D:\360Chrome\Chrome\csharphw\Homework7\HomeWork7\bin\Debug\HomeWork7.exe.config
+D:\360Chrome\Chrome\csharphw\Homework7\HomeWork7\bin\Debug\HomeWork7.exe
+D:\360Chrome\Chrome\csharphw\Homework7\HomeWork7\bin\Debug\HomeWork7.pdb
+D:\360Chrome\Chrome\csharphw\Homework7\HomeWork7\obj\Debug\HomeWork7.csprojAssemblyReference.cache
+D:\360Chrome\Chrome\csharphw\Homework7\HomeWork7\obj\Debug\HomeWork7.Form1.resources
+D:\360Chrome\Chrome\csharphw\Homework7\HomeWork7\obj\Debug\HomeWork7.Properties.Resources.resources
+D:\360Chrome\Chrome\csharphw\Homework7\HomeWork7\obj\Debug\HomeWork7.csproj.GenerateResource.cache
+D:\360Chrome\Chrome\csharphw\Homework7\HomeWork7\obj\Debug\HomeWork7.csproj.CoreCompileInputs.cache
+D:\360Chrome\Chrome\csharphw\Homework7\HomeWork7\obj\Debug\HomeWork7.exe
+D:\360Chrome\Chrome\csharphw\Homework7\HomeWork7\obj\Debug\HomeWork7.pdb
