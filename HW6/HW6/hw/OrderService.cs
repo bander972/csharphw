@@ -66,20 +66,20 @@ namespace HW6.hw
         {
             orders.Sort(comparison);
         }
-        public void Export()
+        public void Export(String path)
         {
             XmlSerializer xsl = new XmlSerializer(typeof(List<Order>));
-            using (FileStream fs = new FileStream("s.xml", FileMode.Create))
+            using (FileStream fs = new FileStream(path, FileMode.Create))
             {
                 xsl.Serialize(fs, orders);
             }
             Console.WriteLine("\nSerialized as XML:");
-            Console.WriteLine(File.ReadAllText("s.xml"));
+            Console.WriteLine(File.ReadAllText(path));
         }
-        public void Import()
+        public void Import(String path)
         {
             XmlSerializer xsl = new XmlSerializer(typeof(List<Order>));
-            using (FileStream fs = new FileStream("s.xml", FileMode.Open))
+            using (FileStream fs = new FileStream(path, FileMode.Open))
             {
                 List<Order> orders = (List<Order>)xsl.Deserialize(fs);
                 orders.ForEach(order => Console.WriteLine(order));
