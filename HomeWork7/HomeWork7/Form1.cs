@@ -20,7 +20,7 @@ namespace HomeWork7
             comboBox1.Items.Add(new ColorName() { Color = Color.Green, Name = "绿色" });
             comboBox1.Items.Add(new ColorName() { Color = Color.Blue, Name = "蓝色" });
             comboBox1.Items.Add(new ColorName() { Color = Color.Black, Name = "黑色" });
-            comboBox1.Items.Add(new ColorName() { Color = Color.Cyan, Name = "青色" });
+            comboBox1.Items.Add(new ColorName() { Color = Color.Cyan, Name = "青色" }); 
             comboBox1.SelectedIndex = 0;
         }
         private Graphics graphics=null;
@@ -67,8 +67,8 @@ namespace HomeWork7
             {
                 graphics = panel3.CreateGraphics();
             }
-            
-            drawCayleyTree(depth,500,700, len,-Math.PI/2);
+
+            drawCayleyTree(depth, panel3.Width/2, 3*panel3.Height/4, len, -Math.PI / 2) ;
         }
 
         private void numericUpDown2_ValueChanged(object sender, EventArgs e)
@@ -85,12 +85,12 @@ namespace HomeWork7
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        {  //颜色改变刷新图形
             this.Refresh();
         }
 
         private void numericUpDown3_ValueChanged(object sender, EventArgs e)
-        {
+        { //左分支长度比
             numericUpDown3.Maximum = 3.0M;
             numericUpDown3.Minimum = 0M;
             numericUpDown3.Increment = 0.1M;
@@ -103,7 +103,7 @@ namespace HomeWork7
         }
 
         private void numericUpDown4_ValueChanged(object sender, EventArgs e)
-        {
+        { //左分支角度
             numericUpDown4.Maximum = 180.0M;
             numericUpDown4.Minimum = 0.0M;
             numericUpDown4.Increment =1.0M ;
@@ -115,7 +115,7 @@ namespace HomeWork7
         }
 
         private void numericUpDown5_ValueChanged(object sender, EventArgs e)
-        {
+        {//右分支角度
             numericUpDown5.Maximum = 180.0M;
             numericUpDown5.Minimum = 0.0M;
             numericUpDown5.Increment = 1.0M;
@@ -127,23 +127,23 @@ namespace HomeWork7
         }
 
         private void numericUpDown6_ValueChanged(object sender, EventArgs e)
-        {
+        { //主干长度
             numericUpDown6.Maximum = 500M;
             numericUpDown6.Minimum = 0.0M;
             numericUpDown6.Increment = 1M;
             if (numericUpDown6.Value < 0.0M || numericUpDown5.Value > 500M)
             {
-                throw new ApplicationException("主干长度必须大于0，最好控制在150以内！");
+                throw new ApplicationException("主干长度必须大于0，最好控制在500以内！");
             }
             this.len = (double)numericUpDown6.Value;
         }
 
- 
+     
     }
     class ColorName
     {
-        public Color Color;
-        public string Name;
+        public Color Color { get; set; }
+        public string Name { get; set; }
 
         public override string ToString()
         {
