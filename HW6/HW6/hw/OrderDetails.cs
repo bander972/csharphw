@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW6.hw
 {
-    class OrderDetails
+    public class OrderDetails
     {
         public Goods Goods { get; set; }
 
@@ -16,7 +16,7 @@ namespace HW6.hw
         {
             get => Goods.GoodsPrice * Quantity;
         }
-
+        public OrderDetails() { }
         public OrderDetails(Goods goods, int quantity)
         {
             this.Goods = goods;

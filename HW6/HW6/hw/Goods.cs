@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW6.hw
 {
-    class Goods
+   public class Goods
     {
             private double price;
             public double GoodsPrice
@@ -24,6 +24,7 @@ namespace HW6.hw
 
             public string GoodsName { get; set; }
             public int Id { get; set; }
+        public Goods() { }
             public Goods(int id, string name, double price)
             {
                 this.Id = id;

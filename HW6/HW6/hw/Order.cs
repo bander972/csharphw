@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace HW6.hw
 {
-    class Order
+    public class Order
     {
         public int OrderIndex { get; set; }
         public double TotalPrice { get => Details.Sum(d => d.Amount); }
         public DateTime OrderTime { get; set; }
         public ClientInfo Client { get; set; }
         public List<OrderDetails> Details { get; } = new List<OrderDetails>();
+        public Order() { }
         public Order(int order, ClientInfo client)
         {
             this.OrderIndex = order;

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace HW6.hw
 {
-    class ClientInfo
+    public  class ClientInfo
     {
         public int Id { get; set; }
         public string name { get; set; }
         private string address { get; set; }
         private uint phoneNum { get; set; }
-
+        public ClientInfo() { }
         public ClientInfo(int id, string name, string address, uint phoneNum)
         {
             this.Id = id;

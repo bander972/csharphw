@@ -1,0 +1,7 @@
+D:\QQ文件下载专用\大二下\course_learning\week8\OrderAppForm\OrderApp\bin\Debug\OrderApp.exe.config
+D:\QQ文件下载专用\大二下\course_learning\week8\OrderAppForm\OrderApp\bin\Debug\OrderApp.exe
+D:\QQ文件下载专用\大二下\course_learning\week8\OrderAppForm\OrderApp\bin\Debug\OrderApp.pdb
+D:\QQ文件下载专用\大二下\course_learning\week8\OrderAppForm\OrderApp\obj\Debug\OrderApp.csprojAssemblyReference.cache
+D:\QQ文件下载专用\大二下\course_learning\week8\OrderAppForm\OrderApp\obj\Debug\OrderApp.csproj.CoreCompileInputs.cache
+D:\QQ文件下载专用\大二下\course_learning\week8\OrderAppForm\OrderApp\obj\Debug\OrderApp.exe
+D:\QQ文件下载专用\大二下\course_learning\week8\OrderAppForm\OrderApp\obj\Debug\OrderApp.pdb

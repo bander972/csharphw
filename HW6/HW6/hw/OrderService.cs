@@ -8,7 +8,7 @@ using System.IO;
 
 namespace HW6.hw
 {
-    class OrderService
+    public class OrderService
     {
         public List<Order> orders = new List<Order>();
         public OrderService() { }

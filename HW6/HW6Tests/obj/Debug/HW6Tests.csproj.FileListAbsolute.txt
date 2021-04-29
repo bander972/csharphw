@@ -1,0 +1,14 @@
+D:\360Chrome\Chrome\csharphw\HW6\HW6Tests\obj\Debug\HW6Tests.csprojAssemblyReference.cache
+D:\360Chrome\Chrome\csharphw\HW6\HW6Tests\obj\Debug\HW6Tests.csproj.CoreCompileInputs.cache
+D:\360Chrome\Chrome\csharphw\HW6\HW6Tests\bin\Debug\HW6Tests.dll
+D:\360Chrome\Chrome\csharphw\HW6\HW6Tests\bin\Debug\HW6Tests.pdb
+D:\360Chrome\Chrome\csharphw\HW6\HW6Tests\bin\Debug\HW6.exe
+D:\360Chrome\Chrome\csharphw\HW6\HW6Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\360Chrome\Chrome\csharphw\HW6\HW6Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\360Chrome\Chrome\csharphw\HW6\HW6Tests\bin\Debug\HW6.pdb
+D:\360Chrome\Chrome\csharphw\HW6\HW6Tests\bin\Debug\HW6.exe.config
+D:\360Chrome\Chrome\csharphw\HW6\HW6Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\360Chrome\Chrome\csharphw\HW6\HW6Tests\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\360Chrome\Chrome\csharphw\HW6\HW6Tests\obj\Debug\HW6Tests.csproj.CopyComplete
+D:\360Chrome\Chrome\csharphw\HW6\HW6Tests\obj\Debug\HW6Tests.dll
+D:\360Chrome\Chrome\csharphw\HW6\HW6Tests\obj\Debug\HW6Tests.pdb
