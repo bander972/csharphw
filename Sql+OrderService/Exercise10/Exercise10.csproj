@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{774D5A11-C5D1-45F4-9D9E-51580F5B2D6E}</ProjectGuid>
+    <ProjectGuid>{C325D2F6-7C04-4957-8733-1E6DE682ABB7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Exercise9</RootNamespace>
-    <AssemblyName>Exercise9</AssemblyName>
+    <RootNamespace>Exercise10</RootNamespace>
+    <AssemblyName>Exercise10</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,10 +54,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimpleCrawler.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

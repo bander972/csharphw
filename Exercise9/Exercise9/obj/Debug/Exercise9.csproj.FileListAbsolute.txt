@@ -1,0 +1,10 @@
+D:\360Chrome\Chrome\csharphw\Exercise9\Exercise9\bin\Debug\Exercise9.exe.config
+D:\360Chrome\Chrome\csharphw\Exercise9\Exercise9\bin\Debug\Exercise9.exe
+D:\360Chrome\Chrome\csharphw\Exercise9\Exercise9\bin\Debug\Exercise9.pdb
+D:\360Chrome\Chrome\csharphw\Exercise9\Exercise9\obj\Debug\Exercise9.csprojAssemblyReference.cache
+D:\360Chrome\Chrome\csharphw\Exercise9\Exercise9\obj\Debug\Exercise9.Form1.resources
+D:\360Chrome\Chrome\csharphw\Exercise9\Exercise9\obj\Debug\Exercise9.Properties.Resources.resources
+D:\360Chrome\Chrome\csharphw\Exercise9\Exercise9\obj\Debug\Exercise9.csproj.GenerateResource.cache
+D:\360Chrome\Chrome\csharphw\Exercise9\Exercise9\obj\Debug\Exercise9.csproj.CoreCompileInputs.cache
+D:\360Chrome\Chrome\csharphw\Exercise9\Exercise9\obj\Debug\Exercise9.exe
+D:\360Chrome\Chrome\csharphw\Exercise9\Exercise9\obj\Debug\Exercise9.pdb
