@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -37,8 +38,14 @@ namespace Exercise9
         }
         private void buttonStart_Click(object sender, EventArgs e)
         {
+            bindingSource1.Clear();
             int Number = 0;
-            int.TryParse(NumberTextBox.Text, out Number); 
+            int.TryParse(NumberTextBox.Text, out Number);
+            Match match = Regex.Match(crawler.StartUrl, SimpleCrawler.urlRegex);
+            if (match.Length == 0) return;
+            string host = match.Groups["host"].Value;
+            crawler.HostFilter = "^" + host + "$";
+            crawler.FileFilter = "((.html?|.aspx|.jsp|.php)$|^[^.]+$)";
             bindingSource1.DataSource = crawler.urlsDownloaded;
             new Thread(crawler.crawl).Start();      
         }

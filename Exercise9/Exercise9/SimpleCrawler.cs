@@ -81,7 +81,7 @@
         {
             public bool Stopped = false;
             public static event Action<SimpleCrawler, string, string> DownloadMsg;
-            public HashSet<String> urlsDownloaded = new HashSet<String>();
+            public HashSet<String> urlsDownloaded { get; } = new HashSet<String>();
             public Queue<string> waitUrls = new Queue<string>();
             string strRef = @"(href|HREF)[]*=[]*[""'][^""'#>]+[""']";
             public static readonly string urlRegex = @"^(?<site>(?<protocol>^[a-zA-z]+)://(?<host>[\w.-]+)(\:d+)?($|/))(\w+/)*(?<file>[^#?]*)";//过滤
@@ -90,7 +90,10 @@
             public string StartUrl { get; set; }
          
             public string RootUrl => SimpleCrawler.getRoot(StartUrl);//根地址
-            public SimpleCrawler()
+        public string HostFilter { get; set; }
+        //文件过滤规则
+        public string FileFilter { get; set; }
+        public SimpleCrawler()
             {
                 StartUrl = "https://www.runoob.com/html/html-tutorial.html";
                 count = 0;

@@ -1,0 +1,10 @@
+D:\360Chrome\Chrome\csharphw\Exercise10\Exercise10\bin\Debug\Exercise10.exe.config
+D:\360Chrome\Chrome\csharphw\Exercise10\Exercise10\bin\Debug\Exercise10.exe
+D:\360Chrome\Chrome\csharphw\Exercise10\Exercise10\bin\Debug\Exercise10.pdb
+D:\360Chrome\Chrome\csharphw\Exercise10\Exercise10\obj\Debug\Exercise10.csprojAssemblyReference.cache
+D:\360Chrome\Chrome\csharphw\Exercise10\Exercise10\obj\Debug\CrawlerForm.Form1.resources
+D:\360Chrome\Chrome\csharphw\Exercise10\Exercise10\obj\Debug\Exercise10.Properties.Resources.resources
+D:\360Chrome\Chrome\csharphw\Exercise10\Exercise10\obj\Debug\Exercise10.csproj.GenerateResource.cache
+D:\360Chrome\Chrome\csharphw\Exercise10\Exercise10\obj\Debug\Exercise10.csproj.CoreCompileInputs.cache
+D:\360Chrome\Chrome\csharphw\Exercise10\Exercise10\obj\Debug\Exercise10.exe
+D:\360Chrome\Chrome\csharphw\Exercise10\Exercise10\obj\Debug\Exercise10.pdb
