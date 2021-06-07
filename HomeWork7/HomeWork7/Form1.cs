@@ -68,7 +68,7 @@ namespace HomeWork7
                 graphics = panel3.CreateGraphics();
             }
 
-            drawCayleyTree(depth, panel3.Width/2, 3*panel3.Height/4, len, -Math.PI / 2) ;
+            drawCayleyTree(depth, panel3.Width/2, panel3.Height, len, -Math.PI / 2) ;
         }
 
         private void numericUpDown2_ValueChanged(object sender, EventArgs e)

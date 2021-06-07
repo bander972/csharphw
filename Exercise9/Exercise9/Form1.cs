@@ -19,13 +19,13 @@ namespace Exercise9
             InitializeComponent();
             bindingSource1.DataSource = crawler.urlsDownloaded;
             UrlTextBox.Text = crawler.StartUrl;
-            SimpleCrawler.DownloadMsg += Crawler_PageDownloaded;
+            crawler.DownloadMsg += Crawler_PageDownloaded;
         }
         public SimpleCrawler crawler = new SimpleCrawler();
         
         private void Crawler_PageDownloaded(SimpleCrawler crawler, string url, string info)
         {
-            var pageInfo = new { Index = bindingSource1.Count + 1, URL = url, Status = info };
+            var pageInfo = new { Index = bindingSource1.Count+1, URL = url, Status = info };
             Action action = () => { bindingSource1.Add(pageInfo); };
             if (this.InvokeRequired)
             {
@@ -41,12 +41,6 @@ namespace Exercise9
             bindingSource1.Clear();
             int Number = 0;
             int.TryParse(NumberTextBox.Text, out Number);
-            Match match = Regex.Match(crawler.StartUrl, SimpleCrawler.urlRegex);
-            if (match.Length == 0) return;
-            string host = match.Groups["host"].Value;
-            crawler.HostFilter = "^" + host + "$";
-            crawler.FileFilter = "((.html?|.aspx|.jsp|.php)$|^[^.]+$)";
-            bindingSource1.DataSource = crawler.urlsDownloaded;
             new Thread(crawler.crawl).Start();      
         }
 

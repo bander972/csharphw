@@ -5,3 +5,10 @@ D:\QQ文件下载专用\大二下\course_learning\week8\OrderAppForm\OrderApp\ob
 D:\QQ文件下载专用\大二下\course_learning\week8\OrderAppForm\OrderApp\obj\Debug\OrderApp.csproj.CoreCompileInputs.cache
 D:\QQ文件下载专用\大二下\course_learning\week8\OrderAppForm\OrderApp\obj\Debug\OrderApp.exe
 D:\QQ文件下载专用\大二下\course_learning\week8\OrderAppForm\OrderApp\obj\Debug\OrderApp.pdb
+D:\360Chrome\Chrome\csharphw\Exercise8\OrderApp\bin\Debug\OrderApp.exe.config
+D:\360Chrome\Chrome\csharphw\Exercise8\OrderApp\bin\Debug\OrderApp.exe
+D:\360Chrome\Chrome\csharphw\Exercise8\OrderApp\bin\Debug\OrderApp.pdb
+D:\360Chrome\Chrome\csharphw\Exercise8\OrderApp\obj\Debug\OrderApp.csprojAssemblyReference.cache
+D:\360Chrome\Chrome\csharphw\Exercise8\OrderApp\obj\Debug\OrderApp.csproj.CoreCompileInputs.cache
+D:\360Chrome\Chrome\csharphw\Exercise8\OrderApp\obj\Debug\OrderApp.exe
+D:\360Chrome\Chrome\csharphw\Exercise8\OrderApp\obj\Debug\OrderApp.pdb

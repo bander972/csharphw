@@ -35,13 +35,12 @@ namespace Exercise9
             this.UrlTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            this.NumberTextBox = new System.Windows.Forms.TextBox();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.序号 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Url = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.状态 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.NumberTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -99,31 +98,6 @@ namespace Exercise9
             this.dataGridView1.Size = new System.Drawing.Size(758, 450);
             this.dataGridView1.TabIndex = 7;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(99, 88);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 15);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "查询次数";
-            // 
-            // NumberTextBox
-            // 
-            this.NumberTextBox.Location = new System.Drawing.Point(218, 85);
-            this.NumberTextBox.Name = "NumberTextBox";
-            this.NumberTextBox.Size = new System.Drawing.Size(100, 25);
-            this.NumberTextBox.TabIndex = 6;
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 568);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(794, 22);
-            this.statusStrip1.TabIndex = 8;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
             // 序号
             // 
             this.序号.HeaderText = "序号";
@@ -145,12 +119,27 @@ namespace Exercise9
             this.状态.Name = "状态";
             this.状态.Width = 125;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(99, 88);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 15);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "查询次数";
+            // 
+            // NumberTextBox
+            // 
+            this.NumberTextBox.Location = new System.Drawing.Point(218, 85);
+            this.NumberTextBox.Name = "NumberTextBox";
+            this.NumberTextBox.Size = new System.Drawing.Size(100, 25);
+            this.NumberTextBox.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(794, 590);
-            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.NumberTextBox);
             this.Controls.Add(this.label2);
@@ -179,7 +168,6 @@ namespace Exercise9
         private System.Windows.Forms.DataGridViewTextBoxColumn 序号;
         private System.Windows.Forms.DataGridViewTextBoxColumn Url;
         private System.Windows.Forms.DataGridViewTextBoxColumn 状态;
-        private System.Windows.Forms.StatusStrip statusStrip1;
     }
 }
 
